@@ -19,7 +19,7 @@ public class MyBatisDemo {
 
         SqlSession sqlSession = sqlSessionFactory.openSession();
 
-        List<User> users = sqlSession.selectList("test.selectAll");
+        List<User> users = sqlSession.selectList(test.selectAll);
 
         System.out.println(users);
 
