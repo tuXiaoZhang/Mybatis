@@ -1,22 +1,8 @@
 package com.itheima.pojo;
 
-public class User {
-
-    // age
-
-    // money
-
-    public User(Integer id, String username, String password, String gender, String addr) {
-        this.id = id;
-        this.username = username;
-        this.password = password;
-        this.gender = gender;
-        this.addr = addr;
-    }
-
+public class UserDto {
     private Integer id;
     private String username;
-    private String password;
     private String gender;
     private String addr;
 
@@ -36,13 +22,6 @@ public class User {
         this.username = username;
     }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
     public String getGender() {
         return gender;
@@ -65,7 +44,6 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
                 ", gender='" + gender + '\'' +
                 ", addr='" + addr + '\'' +
                 '}';
